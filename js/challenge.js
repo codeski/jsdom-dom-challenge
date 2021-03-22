@@ -6,6 +6,7 @@ const likeTracker = {}
 const ul = document.querySelector('ul.likes')
 let paused = false
 const pauseButton = document.getElementById('pause')
+const submit = document.getElementById('submit')
 
 
 // document.addEventListener('DOMContentLoaded', () => {
@@ -17,6 +18,7 @@ function incrementTimer() {
         plus.disabled = false
         minus.disabled = false
         heart.disabled = false
+        submit.disabled = false
         let counter = parseInt(timer.innerText)
         counter += 1
         timer.innerText = counter
@@ -24,6 +26,7 @@ function incrementTimer() {
         plus.disabled = true
         minus.disabled = true
         heart.disabled = true
+        submit.disabled = true
     }
 }
 
